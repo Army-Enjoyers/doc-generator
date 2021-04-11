@@ -3,6 +3,12 @@
  */
 package com.armyenjoyers.dg
 
+import org.docx4j.Docx4J
+import org.docx4j.model.datastorage.BindingHandler
+import java.io.File
+import java.io.FileInputStream
+
+
 class Library {
     fun someLibraryMethod(): Boolean {
         println("SomeLibraryMethod")
@@ -11,5 +17,16 @@ class Library {
 
 }
 fun main(){
-    println("main")
+    val DOCX_INPUT_FILE_PATH = System.getProperty("user.dir") + "\\src\\main\\resources\\Names.docx"
+    val XML_INPUT_FILE_PATH = System.getProperty("user.dir") + "\\src\\main\\resources/\\Name.xml"
+    val OUTPUT_DOCX = System.getProperty("user.dir") + "\\Content control result.docx"
+
+    // Load input_template.docx
+    var wordMLPackage = Docx4J.load(File(DOCX_INPUT_FILE_PATH))
+    // Open the xml stream
+    val xmlStream = FileInputStream(File(XML_INPUT_FILE_PATH))
+    //?????????????????????????????????????
+    BindingHandler.getHyperlinkResolver().setHyperlinkStyle("HyperLink")
+    Docx4J.bind(wordMLPackage, xmlStream, Docx4J.FLAG_BIND_INSERT_XML or Docx4J.FLAG_BIND_BIND_XML)
+    Docx4J.save(wordMLPackage, File(OUTPUT_DOCX), Docx4J.FLAG_NONE)
 }
