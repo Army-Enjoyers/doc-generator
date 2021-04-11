@@ -10,13 +10,13 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" project-jdk-name="14" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="true" project-jdk-name="14" project-jdk-type="JavaSDK" />
   <component name="SbtLocalSettings">
     <option name="projectSyncType">
       <map>
-        <entry key="$PROJECT_DIR$/../../Projects/Task1" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../Projects/Task1/project" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../Projects/example" value="PREVIEW" />
+        <entry key="$USER_HOME$/Projects/Task1" value="PREVIEW" />
+        <entry key="$USER_HOME$/Projects/Task1/project" value="PREVIEW" />
+        <entry key="$USER_HOME$/Projects/example" value="PREVIEW" />
       </map>
     </option>
   </component>

@@ -5,6 +5,11 @@ package com.armyenjoyers.dg
 
 class Library {
     fun someLibraryMethod(): Boolean {
+        println("SomeLibraryMethod")
         return true
     }
+
+}
+fun main(){
+    println("main")
 }
