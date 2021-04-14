@@ -1,13 +1,15 @@
 package com.armyenjoyers.dg.schemas
 
+import com.armyenjoyers.dg.Card
+import com.armyenjoyers.dg.models.Patient
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
 
 @JacksonXmlRootElement
-data class OutpatientCard(
-    @field:JacksonXmlProperty
-    val name: String,
+class OutpatientCard(
+    @field:JacksonXmlProperty(localName = "Patient")
+    val patient: Patient,
 
-    @field:JacksonXmlProperty
+    val name: String,
     val surname: String
 ) : Card()

@@ -1,5 +1,6 @@
 package com.armyenjoyers.dg.schemas
 
+import com.armyenjoyers.dg.Card
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
 

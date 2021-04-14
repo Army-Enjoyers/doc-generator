@@ -8,7 +8,8 @@ import java.io.File
 import kotlin.test.Test
 
 class DocGeneratorTest {
-    @Test fun anyDataDocumentTest() {
+    @Test
+    fun anyDataDocumentTest() {
         val anyData = anyData("name", "21.12.2012")
         val docStream = DocGenerator.generate(anyData)
         docStream.writeTo(File("anyDataDocument.docx").outputStream())
