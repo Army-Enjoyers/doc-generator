@@ -1,6 +1,5 @@
-package com.armyenjoyers.dg.schemas
+package com.armyenjoyers.dg.documents
 
-import com.armyenjoyers.dg.Card
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
 
@@ -11,4 +10,4 @@ data class anyData(
 
     @field:JacksonXmlProperty
     val date: String
-) : Card()
+) : Document()

@@ -3,7 +3,7 @@
  */
 package com.armyenjoyers.dg
 
-import com.armyenjoyers.dg.schemas.anyData
+import com.armyenjoyers.dg.documents.anyData
 import java.io.File
 import kotlin.test.Test
 
