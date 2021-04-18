@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
 
-open class Document {
+open class BaseDocument {
     fun serialize(): String {
 
         val jacksonXmlModule = JacksonXmlModule().apply { setDefaultUseWrapper(false) }

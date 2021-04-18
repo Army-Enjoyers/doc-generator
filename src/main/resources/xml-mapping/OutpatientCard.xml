@@ -1,0 +1,21 @@
+<OutpatientCard>
+    <simpleName>OutpatientCard</simpleName>
+    <Patient>
+        <id/>
+        <firstName></firstName>
+        <lastName></lastName>
+        <patronymic></patronymic>
+        <birthDate></birthDate>
+        <gender>false</gender>
+        <address/>
+        <citizenship></citizenship>
+        <job></job>
+        <polyclinic></polyclinic>
+        <pensionerId></pensionerId>
+        <outpatientCardNumber></outpatientCardNumber>
+        <additionalInfo></additionalInfo>
+        <contingent></contingent>
+        <lifeAnamnesis></lifeAnamnesis>
+        <militaryAffiliation/>
+    </Patient>
+</OutpatientCard>

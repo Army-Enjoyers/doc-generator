@@ -3,15 +3,16 @@
  */
 package com.armyenjoyers.dg
 
-import com.armyenjoyers.dg.documents.anyData
+import com.armyenjoyers.dg.documents.OutpatientCard
+import com.armyenjoyers.dg.models.Patient
 import java.io.File
 import kotlin.test.Test
 
 class DocGeneratorTest {
     @Test
     fun anyDataDocumentTest() {
-        val anyData = anyData("name", "21.12.2012")
-        val docStream = DocGenerator.generate(anyData)
-        docStream.writeTo(File("anyDataDocument.docx").outputStream())
+        val document = OutpatientCard(Patient(firstName = "Sasha", lastName = "Shikutskaya"))
+        val docStream = DocGenerator.generate(document)
+        docStream.writeTo(File("${document.getSimpleName()}.docx").outputStream())
     }
 }

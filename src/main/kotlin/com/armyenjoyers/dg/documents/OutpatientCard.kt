@@ -8,4 +8,4 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
 class OutpatientCard(
     @field:JacksonXmlProperty(localName = "Patient")
     val patient: Patient
-) : Document()
+) : BaseDocument()
